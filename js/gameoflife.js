@@ -1,12 +1,12 @@
-function seed(a, b, c) {
-  console.log(arguments[0]);
-  
-  console.log(arguments[1]);
-
-  console.log(arguments[2]);
+function seed() {
+  return Array.prototype.slice.call(arguments);
 }
 
-function same([x, y], [j, k]) {}
+seed(1, 2, 3);
+
+function same([x, y], [j, k]) {
+
+}
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {}
